@@ -1,0 +1,36 @@
+
+
+.loginpage {
+    background-color: #0F0F13;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.loginbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.header{
+    color:aliceblue
+}
+
+.btn-gradient {
+    background: linear-gradient(90deg, #6366f1, #06b6d4);
+    color: white;
+    border: none;
+    transition: 0.3s ease;
+}
+
+.btn-gradient:hover {
+    background: linear-gradient(90deg, #ec4899, #ef4444);
+    color: white;
+}
+
+.donthave2{
+    
+    margin-top: 25px;
+    text-align: center;
+}
