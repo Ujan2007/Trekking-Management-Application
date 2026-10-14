@@ -1,5 +1,5 @@
 
-
+/* Login page START */ 
 .loginpage {
     background-color: #0F0F13;
     min-height: 100vh;
@@ -33,4 +33,34 @@
     
     margin-top: 25px;
     text-align: center;
+}
+
+
+/* Register page START */ 
+
+.registerpage {
+    background-color: #0F0F13;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.registerbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.btn-gradient2{
+    background: linear-gradient(90deg, #6366f1, #06b6d4);
+    color: white;
+    border: none;
+    transition: 0.3s ease;
+}
+
+.btn-gradient2:hover {
+    background: linear-gradient(90deg, #ec4899, #ef4444);
+    color: white;
 }

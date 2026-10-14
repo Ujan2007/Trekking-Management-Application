@@ -17,19 +17,21 @@
         <h1 class="header"><b>Welcome Back</b></h1>
         <br>
         <br>
-        
-        <div class="form-floating mb-3 ">
-            <input type="email" class="form-control rounded-4 px-5 " id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">Email address</label>
-        </div>
-        <div class="form-floating">
-            <input type="password" class="form-control rounded-4 px-5" id="floatingPassword" placeholder="Password">
-            <label for="floatingPassword">Password</label>
-        </div>
+        <form method="POST" action="{{url_for('login')}}">
+            <div class="form-floating mb-3 ">
+                <input type="email" name = "email" class="form-control rounded-4 px-5 " id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating">
+                <input type="password" name="password" class="form-control rounded-4 px-5" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+            </div>
+            <br>
 
-        <div class="d-grid gap-2 col-3 mx-auto">
-            <button class="btn btn-gradient rounded-4" type="button"><b class="text-light fs-5">Login</b></button>
-        </div>
+            <div class="d-grid gap-2 col-3 mx-auto">
+                <button class="btn btn-gradient rounded-4" type="submit"><b class="text-light fs-5">Login</b></button>
+            </div>
+        </form>
         <br>
         <h6 class="text-light " style="font-family: Arial, sans-serif;">No account? 
             <a href="{{url_for('register')}}" type="button" class="btn btn-primary position-relative">
